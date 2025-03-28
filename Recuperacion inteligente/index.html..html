@@ -4,194 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recuperate de manera inteligente</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;display=swap"
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;display=swap"
       rel="stylesheet">
     <style>
-    /* Configuracion global */
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #eaf4f0;
-      color: #333;
-    }
+      /* Configuracion global */
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #eaf4f0;
+        color: #333;
+      }
 
-    h1, h2, h3 {
-      text-align: center;
-      color: #2e8b57;
-    }
+      h1, h2, h3 {
+        text-align: center;
+        color: #2e8b57;
+      }
 
-    p {
-      line-height: 1.6;
-      font-size: 1rem;
-    }
+      p {
+        line-height: 1.6;
+        font-size: 1rem;
+      }
 
-    a {
-      color: #2e8b57;
-      text-decoration: none;
-    }
+      a {
+        color: #2e8b57;
+        text-decoration: none;
+      }
 
-    a:hover {
-      color: #1a5f39;
-    }
+      a:hover {
+        color: #1a5f39;
+      }
 
-    /* Header */
-    .hero {
-      background: linear-gradient(135deg, #6db36d, #4b7b4d);
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-    }
+      /* Header */
+      .hero {
+        background: linear-gradient(135deg, #6db36d, #4b7b4d);
+        color: white;
+        text-align: center;
+        padding: 50px 20px;
+      }
 
-    .hero h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
+      .hero h1 {
+        font-size: 3rem;
+        margin: 0;
+      }
 
-    .hero p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
+      .hero p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+      }
 
-    /* Navegacion */
-    nav {
-      background-color: #2e8b57;
-      padding: 10px 0;
-    }
+      /* Navegacion */
+      nav {
+        background-color: #2e8b57;
+        padding: 10px 0;
+      }
 
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
+      nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
 
-    nav ul li {
-      margin: 0 20px;
-    }
+      nav ul li {
+        margin: 0 20px;
+      }
 
-    nav ul li a {
-      color: white;
-      font-size: 1rem;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
+      nav ul li a {
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: color 0.3s ease;
+      }
 
-    nav ul li a:hover {
-      color: #f0f8ff;
-    }
+      nav ul li a:hover {
+        color: #f0f8ff;
+      }
 
-    /* Secciones */
-    .section {
-      padding: 50px 20px;
-      text-align: center;
-    }
+      /* Secciones */
+      .section {
+        padding: 50px 20px;
+        text-align: center;
+      }
 
-    .section-about img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-top: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
+      .section-about img {
+        max-width: 100%;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
 
-    .section-gallery .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-      margin-top: 30px;
-    }
+      .section-gallery .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        margin-top: 30px;
+      }
 
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
-    }
+      .gallery img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+      }
 
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
 
-    .services-grid {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
+      .services-grid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
 
-    .service-card {
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      width: 280px;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
+      .service-card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 280px;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
 
-    .service-card:hover {
-      transform: translateY(-10px);
-    }
+      .service-card:hover {
+        transform: translateY(-10px);
+      }
 
-    /* Formulario */
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      max-width: 500px;
-      margin: 0 auto;
-      text-align: left;
-    }
+      /* Formulario */
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: left;
+      }
 
-    form input, form textarea, form button {
-      padding: 12px;
-      font-size: 1rem;
-      border-radius: 5px;
-      border: 1px solid #ddd;
-    }
+      form input, form textarea, form button {
+        padding: 12px;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+      }
 
-    form button {
-      background-color: #4b7b4d;
-      color: white;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+      form button {
+        background-color: #4b7b4d;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
 
-    form button:hover {
-      background-color: #2e8b57;
-    }
+      form button:hover {
+        background-color: #2e8b57;
+      }
 
-    /* Footer */
-    footer {
-      background-color: #2e8b57;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
+      /* Footer */
+      footer {
+        background-color: #2e8b57;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
 
-    /* Boton de WhatsApp */
-    .whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
-      padding: 15px;
-      border-radius: 50%;
-      font-size: 2rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      text-align: center;
-      z-index: 100;
-      cursor: pointer;
-    }
+      /* Boton de WhatsApp */
+      .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: white;
+        padding: 15px;
+        border-radius: 50%;
+        font-size: 2rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        z-index: 100;
+        cursor: pointer;
+      }
 
-    .whatsapp-button a {
-      color: white;
-      text-decoration: none;
-    }
-  </style>
+      .whatsapp-button a {
+        color: white;
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
     <header class="hero">
@@ -231,22 +230,19 @@
     </section>
     <section id="gallery" class="section section-gallery">
       <h2>Galeria</h2>
-      <div class="gallery"> <img src="img/img2.jpg" alt="Imagen 2"> <img src="img/img3.jpg"
-
-          alt="Imagen 3"> <img src="img/img4.jpg" alt="Imagen 4"> <img src="img/img5.jpg"
-
+      <div class="gallery"> <img src="img/img2.jpg" alt="Imagen 2"> <img src="img/img3.jpg"
+          alt="Imagen 3"> <img src="img/img4.jpg" alt="Imagen 4"> <img src="img/img5.jpg"
           alt="Imagen 5"> </div>
     </section>
     <section id="contact" class="section section-contact">
       <h2>Contacto</h2>
-      <p>  Telefono: <a href="tel:+527731845317">+52 773 184 5317</a></p>
-      <p>  WhatsApp: <a href="https://wa.me/527731845317">Enviamos un mensaje</a></p>
+      <p> Telefono: <a href="tel:+527731845317">+52 773 184 5317</a></p>
+      <p> WhatsApp: <a href="https://wa.me/527731845317">Enviamos un mensaje</a></p>
     </section>
     <footer>
       <p>© 2025 Recuperate de manera inteligente. Todos los derechos reservados.</p>
     </footer>
-    <div class="whatsapp-button"> <a href="https://wa.me/527731845317" target="_blank"> ?? </a>
-    </div>
-    
+    <div class="whatsapp-button"> <a href="https://wa.me/527731845317" target="_blank">
+        &#128172; </a> </div>
   </body>
 </html>
